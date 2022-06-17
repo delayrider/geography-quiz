@@ -36,7 +36,9 @@ Welcome to [Test Your Knowledge]()!
 - Font color changes when input is selected
   - Gives clear user feedback on what answer has been selected.
 - API from [Open Trivia API](https://opentdb.com/api_config.php). This savec me time and allowed to general high quality trivia questions
-- Use of ```querySelector``` and the ```const``` declaration helped making my JS less verbose and simplified the developement for me. 
+- Use of ```querySelector``` and the ```const``` declaration helped making my JS less verbose and simplified the developement for me.
+- Use of ```json``` and ```ajax``` formatting to be able to access the data from the API
+- 
 
 # Future Features
 
@@ -114,11 +116,13 @@ To run the code locally the following steps need to be taken
 # Credits
 
 - Tutorials and posts
-  - [This](https://www.youtube.com/watch?v=qXXM9nVxLWk&t=855s) tutorial by [WEB CIFAR](https://www.youtube.com/c/WEBCIFAROfficial) inspired my project and gave guidance. 
+  - [This](https://www.youtube.com/watch?v=qXXM9nVxLWk&t=855s) tutorial by [WEB CIFAR](https://www.youtube.com/c/WEBCIFAROfficial) inspired my project and gave guidance. With certain implementations being unknown to me I relied on the tutorials below to grasp a full understanding of said features.
   - [This](https://careerkarma.com/blog/javascript-queryselector-vs-getelementbyid/#:~:text=With%20a%20querySelector%20statement%2C%20you,an%20element%20by%20its%20ID.) article by [James Gallagher](https://careerkarma.com/blog/author/jamesgallagher/) helped me understand and use confidently the ```querySelector``` function in JS. 
-  - [This](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) articlöe by [MDN Web Docs](https://developer.mozilla.org/en-US/) clarified what the ```const``` declaration is and how to use it. 
+  - [This](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) article by [MDN Web Docs](https://developer.mozilla.org/en-US/) clarified what the ```const``` declaration is and how to use it. 
+  - [This](https://www.youtube.com/watch?v=rJesac0_Ftw) tutorial by [LearnWebCode](https://www.youtube.com/user/LearnWebCode) cleared up the ```json``` and ```ajax``` format.
   - [This](https://dmitripavlutin.com/javascript-variables-best-practices/#:~:text=const%20is%20a%20one%2Doff,prefer%20const%20%2C%20otherwise%20use%20let%20.) article by [Dmitri Pavlutin](https://dmitripavlutin.com/) gave me insight on JS best practices. 
 - Content
+  - [Open Trivia API](https://opentdb.com/api_config.php) generated the questions and answers for my quiz.
 
 - Media
 

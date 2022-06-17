@@ -6,3 +6,9 @@ const optionEl = document.querySelector('.all-options');
 const buttonEl = document.querySelector('.buttons');
 const scoreEl = document.querySelector('.scoreBoard .user-score');
 const answeredEl = document.querySelector('.scoreBoard .question-answered');
+
+window.addEventListener('DOMContentLoaded', quizApp);
+
+function quizApp(){
+    
+}

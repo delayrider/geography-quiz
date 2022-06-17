@@ -29,6 +29,13 @@ Welcome to [Guess the Capital]()!
 
 # Current Features
 
+- Pointer cursor
+  - Makes the site more user friendly by inciting the user to click on the different inputs
+- Background color change when hovering on radio buttons
+  - This provides the user feedback on his actions on the app. 
+- Font color changes when input is selected
+  - Gives clear user feedback on what answer has been selected.
+
 # Future Features
 
 # Technologies Used
@@ -112,4 +119,4 @@ To run the code locally the following steps need to be taken
 
 # Special thanks
 
-Special thanks to [StackOverflow](https://stackoverflow.com/) and all it's users for providing me with answers through the development process. Special thanks to the entire [Code Institute](https://codeinstitute.net/global/) team for making this possible. And a warm thanks to the amazing Slack community for your guidance and support.
+Special thanks to [StackOverflow](https://stackoverflow.com/) and all it's users for providing me with answers through the development process. Special thanks to the entire [Code Institute](https://codeinstitute.net/global/) team for making this possible. And a warm thanks to the amazing Slack community for their guidance and support.

@@ -5,8 +5,25 @@ Welcome to [Guess the Capital]()!
 
 ![Am I Responsive screenshot]()
 
-# User Experience UX
-## User stories
+# Table of Content
++ [User Experience](#user-experience)
+  + [User Stories](#user-stories)
++ [Design](#design)
++ [Current Features](#current-features)
++ [Future Features](#future-features)
++ [Technologies Used](#technologies-used)
++ [Testing](#testing)
+  + [Validator Testing](#validator-testing)
+  + [Responsive Testing](#responsive-testing)
+  + [Manual Testing](#manual-testing)
++ [Bugs](#bugs)
++ [Deployment](#deployment)
++ [Credits](#credits)
++ [Special Thanks](#special-thanks)
+
+
+# User Experience
+## User Stories
 
 # Design
 
@@ -14,7 +31,7 @@ Welcome to [Guess the Capital]()!
 
 # Future Features
 
-# Technologies used
+# Technologies Used
 - Languages used
   - HTML
   - CSS
@@ -33,7 +50,7 @@ Welcome to [Guess the Capital]()!
 
 # Testing
 
-## Validator testing
+## Validator Testing
 
 - W3C Validator
   - All four HTML pages came back with no errors
@@ -86,7 +103,8 @@ To run the code locally the following steps need to be taken
 # Credits
 
 - Tutorials and posts
-  - [This](https://www.youtube.com/watch?v=qXXM9nVxLWk&t=855s) tutorial vy [WEB CIFAR](https://www.youtube.com/c/WEBCIFAROfficial)
+  - [This](https://www.youtube.com/watch?v=qXXM9nVxLWk&t=855s) tutorial by [WEB CIFAR](https://www.youtube.com/c/WEBCIFAROfficial)
+
 - Content
 
 - Media
@@ -95,7 +113,3 @@ To run the code locally the following steps need to be taken
 # Special thanks
 
 Special thanks to [StackOverflow](https://stackoverflow.com/) and all it's users for providing me with answers through the development process. Special thanks to the entire [Code Institute](https://codeinstitute.net/global/) team for making this possible. And a warm thanks to the amazing Slack community for your guidance and support.
-
-# Final note for assessor
-
-The initial planning of this project was made on paper en then transcribed to the README.md file.

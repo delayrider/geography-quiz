@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', quizApp);
 // Statement of the quizApp function 
 
 function quizApp(){
-    fetchQuiz();
+    const data = fetchQuiz();
 }
 
 // Fetches the API
@@ -25,5 +25,6 @@ async function fetchQuiz(){
     const response = await fetch(baseURL);
     const data = await response.json();
 
-    console.log(data.results);
+    // console.log(data.results);
+    return data.results;
 }

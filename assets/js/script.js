@@ -9,6 +9,13 @@ const buttonEl = document.querySelector('.buttons');
 const scoreEl = document.querySelector('.scoreBoard .user-score');
 const answeredEl = document.querySelector('.scoreBoard .question-answered');
 
+// Desclares variable for the quizApp function
+
+let question, answer;
+let options = [];
+let score = 0;
+let answeredQus = 0;
+
 // Event listener waits for DOM to be fully loaded before calling the quizApp function
 
 window.addEventListener('DOMContentLoaded', quizApp);

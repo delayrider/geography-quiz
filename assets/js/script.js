@@ -44,6 +44,8 @@ form.addEventListener('submit', (e)=>{
 
     if(e.target.quiz.value){
         checkQuiz(e.target.quiz.value)
+        e.target.querySelector('button').style.display = 'none';
+        generateButtons();
     }else{
         return
     }
@@ -95,4 +97,14 @@ function checkQuiz(selected){
 function updateScore(){
     scoreCl.innerText = score;
     answeredCl.innerText = questionCount;
+}
+
+// Created Next Question and End Game buttons
+
+generateButtons(){
+    const finishButton = document.createElement('button');
+    finishButton.innerText = 'Finish'
+    finishButton.setAttribut('type', 'button');
+    finishButton.classList.add('finsih-button');
+    buttonCl.appendChild('finsihButton');
 }

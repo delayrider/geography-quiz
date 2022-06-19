@@ -1,6 +1,6 @@
 // Gets all the elements from the DOM
 
-const baseURL ='https://opentdb.com/api.php?amount=50&category=22&type=multiple';
+const baseURL ='https://opentdb.com/api.php?amount=1&category=22&type=multiple';
 const containerEl = document.querySelector('.container');
 const form = document.querySelector('#quiz-form');
 const questionEl = document.querySelector('.question');
@@ -27,7 +27,12 @@ async function quizApp(){
     question = data[0].question;
     options = [];
     answer = data[0].correct_answer;
-    data[0].incorrect_answers.map[option => options.push(options)]
+    data[0].incorrect_answers.map(option => options.push(option));
+
+// Pushes the correct answer into the same array as incorrect answer and shuffels the options
+    options.splice(Math.floor(Math.random()* options.length + 1), 0, answer);
+    console.log(answer, options);
+    
 }
 
 // Fetches the API

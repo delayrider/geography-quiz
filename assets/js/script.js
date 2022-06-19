@@ -1,13 +1,13 @@
 // Gets all the elements from the DOM
 
 const baseURL ='https://opentdb.com/api.php?amount=1&category=22&type=multiple';
-const containerEl = document.querySelector('.container');
+const containerCl = document.querySelector('.container');
 const form = document.querySelector('#quiz-form');
-const questionEl = document.querySelector('.question');
-const optionEl = document.querySelector('.all-options');
-const buttonEl = document.querySelector('.buttons');
-const scoreEl = document.querySelector('.scoreBoard .user-score');
-const answeredEl = document.querySelector('.scoreBoard .question-answered');
+const questionCl = document.querySelector('.question');
+const optionCl = document.querySelector('.all-options');
+const buttonCl = document.querySelector('.buttons');
+const scoreCl = document.querySelector('.scoreBoard .user-score');
+const answeredCl = document.querySelector('.scoreBoard .question-answered');
 
 // Desclares variable for the quizApp function
 
@@ -32,7 +32,8 @@ async function quizApp(){
 // Pushes the correct answer into the same array as incorrect answer and shuffels the options
     options.splice(Math.floor(Math.random()* options.length + 1), 0, answer);
     console.log(answer, options);
-    
+    createHTML(question, options);
+   
 }
 
 // Fetches the API
@@ -43,4 +44,12 @@ async function fetchQuiz(){
 
     console.log(data.results);
     return data.results;
+}
+
+// Manipulates DOM to display questions and content to user
+
+function createHTML(question, options){
+
+    optionCl.innerHTML = '';
+    questionCl.innerHTML = question;
 }

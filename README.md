@@ -36,6 +36,8 @@ Welcome to [Test Your Knowledge]()!
 - Font color changes when input is selected
 - If correct answer is selected it will turn green to give feedback to the user. 
 - Score counter gives user information on how many answers are correct agains how many answers have been played.
+- The "Next Question" buton allows the user to pass to the next question unambiguously.
+- This "Finsih Game" button brings the user to the end of the game.
   - Gives clear user feedback on what answer has been selected.
 - API from [Open Trivia API](https://opentdb.com/api_config.php). This savec me time and allowed to general high quality trivia questions
 - Use of ```querySelector``` and the ```const``` declaration helped making my JS less verbose and simplified the developement for me.

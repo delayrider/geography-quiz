@@ -96,3 +96,17 @@ button:hover{
 form .option.correct{
     background-color: green;
 }
+
+.finish-button, .next-button{
+    width: 40%;
+    display: inline-block;
+}
+
+.finish-button{
+    margin-right: 0.5rem;
+    margin-left: 1rem;
+}
+
+.next-button{
+    margin-left: 0.5rem;
+}

@@ -105,12 +105,15 @@ function generateButtons(){
     const finishButton = document.createElement('button');
     finishButton.innerText = 'Finish'
     finishButton.setAttribute('type', 'button');
-    finishButton.classList.add('finsih-button');
+    finishButton.classList.add('finish-button');
     buttonCl.appendChild(finishButton);
 
     const nextButton = document.createElement('button');
-    nextButton.innerText = 'Next Question'
+    nextButton.innerText = 'Next'
     nextButton.setAttribute('type', 'button');
-    nextButton.classList.add('finsih-button');
+    nextButton.classList.add('finish-button');
     buttonCl.appendChild(nextButton);
+
+    finishButton.addEventListener('click', endGame);
+    nextButton.addEventListener('click', getNextQuestion);
 }

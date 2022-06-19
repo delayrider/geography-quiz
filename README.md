@@ -1,7 +1,7 @@
-m# How well do you know your planet? - Geography Quiz 
-- A trivia quiz where the users can test their general knowledge
+## How well do you know your planet? - Geography Quiz 
+A Quiz for those who want to test their knowledge in geography.
 
-Welcome to [Test Your Knowledge]()!
+Welcome to [GEORAPHY QUIZ]()!
 
 ![Am I Responsive screenshot]()
 
@@ -24,27 +24,32 @@ Welcome to [Test Your Knowledge]()!
 
 # User Experience
 ## User Stories
-
-# Design
+- Provides the user with a simple and intertaining game to test their knowledge on geography. 
+- As this project was quite difficult for me to complete I left out some of the UX I had planned to concentrate on having a solid grasp on the js. 
 
 # Current Features
 
 - Pointer cursor
-  - Makes the site more user friendly by inciting the user to click on the different inputs.
-- Background color change when hovering on radio buttons
-  - This provides the user feedback on his actions on the app. 
-- Font color changes when input is selected
+  Makes the site more user friendly by inciting the user to click on the different inputs.
+- Background color change when hovering on buttons
+  This provides the user feedback on his actions on the app. 
+![](assets/images/buttons-onhover.png)
 - If correct answer is selected it will turn green to give feedback to the user. 
-- Score counter gives user information on how many answers are correct agains how many answers have been played.
-- The "Next Question" buton allows the user to pass to the next question unambiguously.
-- This "Finsih Game" button brings the user to the end of the game.
-  - Gives clear user feedback on what answer has been selected.
-- API from [Open Trivia API](https://opentdb.com/api_config.php). This savec me time and allowed to general high quality trivia questions
-- Use of ```querySelector``` and the ```const``` declaration helped making my JS less verbose and simplified the developement for me.
-- Use of ```json``` and ```ajax``` formatting to be able to access the data from the API
-- 
+  ![](assets/images/highlights-correctansw.png)
+- If an answer is selected, the font changes color.
+  This gives the user feedback as to where he clicked
+![](assets/images/font-color-select)
+- Score counter gives user information on how many answers are correct against how many answers have been played.
+  ![](assets/images/end-page.png)
+- The "Next" buton allows the user to pass to the next question unambiguously.
+- The "End" buton shows the user his final score.
+![](assets/images/end-page.png)
+- The "Play Again" button allows the user to start the game again.
 
 # Future Features
+
+- A more user friendly design.
+- More engaging visuals.
 
 # Technologies Used
 - Languages used
@@ -58,7 +63,6 @@ Welcome to [Test Your Knowledge]()!
   - [Gitpod](https://gitpod.io/workspaces) for editing
   - [Github](https://github.com/) for storing and deployment
   - [Google Fonts¨](https://fonts.google.com/) for sourcing the fonts
-  - [Font Awesome](https://fontawesome.com/search?q=moon&s=solid%2Cbrands) for incons
   - [ColorPicker](https://imagecolorpicker.com/en) to create the palette of the website
   - [DevTools](https://developer.chrome.com/docs/devtools/) for testing while developping the site
   - [DevTools Lighthouse](https://developers.google.com/web/tools/lighthouse) to check performance, accessiblity, best practice and SEO ratings
@@ -76,15 +80,15 @@ Welcome to [Test Your Knowledge]()!
 - Lighthouse score for mobile
   - The original score for performance was 89 because the size of the touch navigation element was not big enough. The score was brough up by making these bigger.
 
-
+![](assets/images/lighthouse-mobile.png)
 
 - Lighthouse score for desktop
   - The original score for SEO was 79. The score was brought up by adding a description in the meta tags.
 
+![](assets/images/lighthouse-desktop.png)
 
 
-- [A11y](https://color.a11y.com/Contrast/) was used to test the color contrast for accessibility.
-
+- Ran the js through [this](https://beautifytools.com/javascript-beautifier.php).
 
 
 ## Responsive Testing
@@ -93,7 +97,17 @@ The DevTools were used during the entire developpement to test responsiveness of
 
 ## Manual Testing
 
-# Bugs
+Manual testing was carried out on the website for all features
+
+- Cursor: pointer
+  - When hovering over the buttons, the cursor renders as a pointer
+- Button background change on hover
+  - All buttons change background color when user hovers over them
+- Font color change on select
+  - All multiple solutions change font color when selected
+- New question loads when clicking next
+- End page loads and shows the users score when clicked
+- Correct answers against questions answered update as user plays
 
 # Deployment 
 - This project was developped using Gitpod, then commited to git and pushed to GitHub

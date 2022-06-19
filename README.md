@@ -1,9 +1,7 @@
 ## How well do you know your planet? - Geography Quiz 
 A Quiz for those who want to test their knowledge in geography.
 
-Welcome to [GEORAPHY QUIZ]()!
-
-![Am I Responsive screenshot]()
+Welcome to [GEORAPHY QUIZ](https://delayrider.github.io/geography-quiz/)!
 
 # Table of Content
 + [User Experience](#user-experience)

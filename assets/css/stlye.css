@@ -144,5 +144,6 @@ form .option.correct{
 @media only screen and (max-width: 600px) {
     .container{
         width: 80%;
+        height: 40vh;
     }
 }

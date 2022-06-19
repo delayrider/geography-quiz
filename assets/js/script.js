@@ -150,7 +150,7 @@ function endGame(){
     overlay.classList.add('result-overlay');
 
     overlay.innerHTML = `
-    <div class = "final-result">${score}/${questionCount}$</div>
+    <div class = "final-result">${score}/${questionCount}</div>
     <button>Play Again!</button>
     `
 

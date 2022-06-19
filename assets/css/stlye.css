@@ -76,7 +76,8 @@ form .option input[type="radio"]:checked + label{
     color: #FF7721;
 
 }
-form button{
+form button,
+.container .result-overlay button{
     width: 100%;
     margin-top: 20px;
     padding: 10px;
@@ -89,7 +90,8 @@ form button{
     transition: .3s ease background-color;
 }
 
-button:hover{
+button:hover,
+.container .result-overlay button:hover{
     background-color: #cccccc;
 }
 
@@ -109,4 +111,22 @@ form .option.correct{
 
 .next-button{
     margin-left: 0.5rem;
+}
+
+.container .result-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #E6E6E6;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .result-overlay .final-result{
+    font-size: 5rem;
 }

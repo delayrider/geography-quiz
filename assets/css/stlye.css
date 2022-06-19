@@ -93,6 +93,6 @@ button:hover{
     background-color: #cccccc;
 }
 
-form .option-correct{
+form .option.correct{
     background-color: green;
 }

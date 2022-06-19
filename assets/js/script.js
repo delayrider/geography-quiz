@@ -87,7 +87,7 @@ function checkQuiz(selected){
     updateScore();
     form.quiz.forEach(input =>{
         if(input.value === answer){
-            input.parentElement.classList.add('correct');
+          input.parentElement.classList.add('correct');
         }
     })
 }
@@ -101,10 +101,16 @@ function updateScore(){
 
 // Created Next Question and End Game buttons
 
-generateButtons(){
+function generateButtons(){
     const finishButton = document.createElement('button');
     finishButton.innerText = 'Finish'
-    finishButton.setAttribut('type', 'button');
+    finishButton.setAttribute('type', 'button');
     finishButton.classList.add('finsih-button');
-    buttonCl.appendChild('finsihButton');
+    buttonCl.appendChild(finishButton);
+
+    const nextButton = document.createElement('button');
+    nextButton.innerText = 'Next Question'
+    nextButton.setAttribute('type', 'button');
+    nextButton.classList.add('finsih-button');
+    buttonCl.appendChild(nextButton);
 }

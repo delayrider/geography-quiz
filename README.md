@@ -1,4 +1,4 @@
-# How well do you know your planet? - Geography Quiz 
+m# How well do you know your planet? - Geography Quiz 
 - A trivia quiz where the users can test their general knowledge
 
 Welcome to [Test Your Knowledge]()!
@@ -116,7 +116,7 @@ To run the code locally the following steps need to be taken
 # Credits
 
 - Tutorials and posts
-  - [This](https://www.youtube.com/watch?v=qXXM9nVxLWk&t=855s) tutorial by [WEB CIFAR](https://www.youtube.com/c/WEBCIFAROfficial) inspired my project and gave guidance. With certain implementations being unknown to me I relied on the tutorials below to grasp a full understanding of said features.
+  - [This](https://www.youtube.com/watch?v=qXXM9nVxLWk&t=855s) tutorial by [WEB CIFAR](https://www.youtube.com/c/WEBCIFAROfficial) was followed by steps. With certain implementations being unknown to me I relied on the tutorials below to grasp a full understanding of said features.
   - [This](https://careerkarma.com/blog/javascript-queryselector-vs-getelementbyid/#:~:text=With%20a%20querySelector%20statement%2C%20you,an%20element%20by%20its%20ID.) article by [James Gallagher](https://careerkarma.com/blog/author/jamesgallagher/) helped me understand and use confidently the ```querySelector``` function in JS. 
   - [This](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const) article by [MDN Web Docs](https://developer.mozilla.org/en-US/) clarified what the ```const``` declaration is and how to use it. 
   - [This](https://www.youtube.com/watch?v=rJesac0_Ftw) tutorial by [LearnWebCode](https://www.youtube.com/user/LearnWebCode) cleared up the ```json``` and ```ajax``` format.

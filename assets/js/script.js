@@ -83,6 +83,11 @@ function checkQuiz(selected){
         score++;
     }
     updateScore();
+    form.quiz.forEach(input =>{
+        if(input.value === answer){
+            input.parentElement.classList.add('correct');
+        }
+    })
 }
 
 // Updates the score board

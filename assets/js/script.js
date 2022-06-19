@@ -14,7 +14,7 @@ const answeredCl = document.querySelector('.scoreBoard .question-answered');
 let question, answer;
 let options = [];
 let score = 0;
-let answeredQus = 0;
+let questionCount = 0;
 
 // Event listener waits for DOM to be fully loaded before calling the quizApp function
 
@@ -33,6 +33,8 @@ async function quizApp(){
     options.splice(Math.floor(Math.random()* options.length + 1), 0, answer);
     console.log(answer, options);
     createHTML(question, options);
+
+    console.log(answer);
 }
 
 // Handels the submit button
@@ -41,8 +43,7 @@ form.addEventListener('submit', (e)=>{
     e.preventDefault();
 
     if(e.target.quiz.value){
-        console.log('you submit this quiz')
-        
+        checkQuiz(e.target.quiz.value)
     }else{
         return
     }
@@ -59,7 +60,7 @@ async function fetchQuiz(){
     return data.results;
 }
 
-// Manipulates DOM to display questions and content to user
+// Populates the DOM to display questions and content to user
 
 function createHTML(question, options){
 
@@ -74,4 +75,19 @@ function createHTML(question, options){
         `
         optionCl.appendChild(div)
     })
+}
+
+function checkQuiz(selected){
+    questionCount++;
+    if(selected === answer){
+        score++;
+    }
+    updateScore();
+}
+
+// Updates the score board
+
+function updateScore(){
+    scoreCl.innerText = score;
+    answeredCl.innerText = questionCount;
 }

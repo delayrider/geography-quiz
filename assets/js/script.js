@@ -33,8 +33,21 @@ async function quizApp(){
     options.splice(Math.floor(Math.random()* options.length + 1), 0, answer);
     console.log(answer, options);
     createHTML(question, options);
-   
 }
+
+// Handels the submit button
+
+form.addEventListener('submit', (e)=>{
+    e.preventDefault();
+
+    if(e.target.quiz.value){
+        console.log('you submit this quiz')
+        
+    }else{
+        return
+    }
+}
+)
 
 // Fetches the API
 
@@ -56,8 +69,8 @@ function createHTML(question, options){
         const div = document.createElement('div');
         div.classList.add('option');
         div.innerHTML = ` 
-        <input type="radio" id="option${index}" value="1" name="quiz">
-        <label for="option${index}">${option}</label>
+        <input type="radio" id="option${index + 1}" value="${option}" name="quiz">
+        <label for="option${index + 1}">${option}</label>
         `
         optionCl.appendChild(div)
     })

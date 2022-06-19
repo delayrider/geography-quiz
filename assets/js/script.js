@@ -103,7 +103,7 @@ function updateScore(){
 
 function generateButtons(){
     const finishButton = document.createElement('button');
-    finishButton.innerText = 'Finish'
+    finishButton.innerText = 'End'
     finishButton.setAttribute('type', 'button');
     finishButton.classList.add('finish-button');
     buttonCl.appendChild(finishButton);
@@ -111,9 +111,30 @@ function generateButtons(){
     const nextButton = document.createElement('button');
     nextButton.innerText = 'Next'
     nextButton.setAttribute('type', 'button');
-    nextButton.classList.add('finish-button');
+    nextButton.classList.add('next-button');
     buttonCl.appendChild(nextButton);
+
+// Adds event listeners to the new buttons
 
     finishButton.addEventListener('click', endGame);
     nextButton.addEventListener('click', getNextQuestion);
+
+}
+
+// Gives function to the new buttons
+
+function getNextQuestion(){
+    const nextButton = document.querySelector('.next-button');
+    const finishButton = document.querySelector('.finish-button');
+
+buttonCl.removeChild(nextButton);
+buttonCl.removeChild(finishButton); 
+
+
+buttonCl.querySelector('button[type="submit"]').style.display ='block'
+quizApp();
+}
+
+function endGame(){
+    console.log('quiz is finished');
 }

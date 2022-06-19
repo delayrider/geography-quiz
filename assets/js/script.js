@@ -52,4 +52,13 @@ function createHTML(question, options){
 
     optionCl.innerHTML = '';
     questionCl.innerHTML = question;
+    options.map((option, index) =>{
+        const div = document.createElement('div');
+        div.classList.add('option');
+        div.innerHTML = ` 
+        <input type="radio" id="option${index}" value="1" name="quiz">
+        <label for="option${index}">${option}</label>
+        `
+        optionCl.appendChild(div)
+    })
 }

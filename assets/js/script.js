@@ -130,11 +130,29 @@ function getNextQuestion(){
 buttonCl.removeChild(nextButton);
 buttonCl.removeChild(finishButton); 
 
+// Puts submit button back after selecting next 
 
 buttonCl.querySelector('button[type="submit"]').style.display ='block'
 quizApp();
 }
 
+// Ends the game
+
 function endGame(){
-    console.log('quiz is finished');
+    const nextButton = document.querySelector('.next-button');
+    const finishButton = document.querySelector('.finish-button');
+
+    buttonCl.removeChild(nextButton);
+    buttonCl.removeChild(finishButton); 
+    buttonCl.querySelector('button[type="submit"]').style.display ='block'
+
+    const overlay = document.createElement('div');
+    overlay.classList.add('result-overlay');
+
+    overlay.innerHTML = `
+    <div class = "final-result">${score}/${questionCount}$</div>
+    <button>Play Again!</button>
+    `
+
+    containerCl.appendChild(overlay);
 }
